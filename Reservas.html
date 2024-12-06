@@ -7,68 +7,121 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
         }
-        .container {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-            border-radius: 10px;
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
         }
-        h1 {
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 8px;
             text-align: center;
         }
-        label {
-            display: block;
-            margin: 10px 0 5px;
+        th {
+            background-color: #f2f2f2;
         }
-        select, input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            margin: 5px 0;
+        .disponible {
+            color: green;
+        }
+        .no-disponible {
+            color: red;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Reserva de Pistas</h1>
+
+<h1>Reserva de Pistas</h1>
+
+<table>
+    <thead>
+        <tr> 
+            <th>Pista</th>
+            <th>9:00 AM - 11:00 AM</th>
+            <th>11:00 AM - 13:00 PM</th>
+            <th>13:00 PM - 15:00 PM</th>
+            <th>15:00 AM - 17:00 AM</th>
+            <th>19:00 AM - 21:00 PM</th>
+            <th>21:00 AM - 23:00 PM</th>
+        </tr>
         
-        <form action="#" method="post">
-            <label for="pista">Selecciona una pista:</label>
-            <select name="pista" id="pista">
-
-                <option value="pista1">Pista 1</option><a href="Pista1.html"></a>
-                <option value="pista2">Pista 2</option>
-                <option value="pista3">Pista 3</option>
-                <option value="pista4">Pista 4</option>
-            </select>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Pista 1</td>
+            <td id="pista1-9-11" class="disponible">Disponible <button type="button" onclick="reservar('pista1-9-11')">Reservar</button></td>
+            <td id="pista1-11-13" class="no-disponible">No disponible</td>
+            <td id="pista4-13-15" class="disponible">Disponible <button type="button" onclick="reservar('pista4-13-15')">Reservar</button></td>
+            <td id="pista4-15-17" class="disponible">Disponible <button type="button" onclick="reservar('pista4-15-17')">Reservar</button></td>
+            <td id="pista4-17-19" class="disponible">Disponible <button type="button" onclick="reservar('pista4-17-19')">Reservar</button></td>
+            <td id="pista1-19-21" class="disponible">Disponible <button type="button" onclick="reservar('pista1-19-21')">Reservar</button></td>
             
-            <label for="horario">Selecciona el horario:</label>
-            <select name="horario" id="horario">
+        </tr>
+        <tr>
+            <td>Pista 2</td>
+            <td id="pista2-9-11" class="no-disponible">No disponible</td>
+            <td id="pista1-11-13" class="no-disponible">No disponible</td>
+            <td id="pista4-13-15" class="disponible">Disponible <button type="button" onclick="reservar('pista4-13-15')">Reservar</button></td>
+            <td id="pista4-15-17" class="disponible">Disponible <button type="button" onclick="reservar('pista4-15-17')">Reservar</button></td>
+            <td id="pista4-17-19" class="disponible">Disponible <button type="button" onclick="reservar('pista4-17-19')">Reservar</button></td>
+            <td id="pista1-19-21" class="disponible">Disponible <button type="button" onclick="reservar('pista1-19-21')">Reservar</button></td>
+         
 
-                <option value="08:00">08:00</option>
-                <option value="09:00">09:00</option>
-                <option value="10:00">10:00</option>
-                <option value="11:00">11:00</option>
-                <option value="12:00">12:00</option>
-                <option value="13:00">13:00</option>
-                <option value="14:00">14:00</option>
-                <option value="15:00">15:00</option>
-                <option value="16:00">16:00</option>
-                <option value="17:00">17:00</option>
-                <option value="18:00">18:00</option>
-                <option value="19:00">19:00</option>
-                <option value="20:00">20:00</option>
-                <option value="22:00">21:00</option>
-                <option value="23:00">22:00</option>
-                <option value="23:00">23:00</option>
+        </tr>
+        <tr>
+            <td>Pista 3</td>
+            <td id="pista3-9-11" class="disponible">Disponible <button type="button" onclick="reservar('pista3-9-11')">Reservar</button></td>
+            <td id="pista1-11-13" class="no-disponible">No disponible</td>
+            <td id="pista3-13-15" class="no-disponible">No disponible</td>
+            <td id="pista4-15-17" class="disponible">Disponible <button type="button" onclick="reservar('pista4-15-17')">Reservar</button></td>
+            <td id="pista4-17-19" class="disponible">Disponible <button type="button" onclick="reservar('pista4-17-19')">Reservar</button></td>
+            <td id="pista1-19-21" class="disponible">Disponible <button type="button" onclick="reservar('pista1-19-21')">Reservar</button></td>
+   
 
-               
-
-            </select>
+          
             
-            <input type="submit" value="Reservar">
-        </form>
-    </div>
+        </tr>
+        <tr>
+            <td>Pista 4</td>
+            <td id="pista4-9-11" class="disponible">Disponible <button type="button" onclick="reservar('pista4-9-11')">Reservar</button></td>
+            <td id="pista4-11-13" class="disponible">Disponible <button type="button" onclick="reservar('pista4-11-13')">Reservar</button></td>
+            <td id="pista3-13-15" class="no-disponible">No disponible</td>
+            <td id="pista4-15-17" class="disponible">Disponible <button type="button" onclick="reservar('pista4-15-17')">Reservar</button></td>
+            <td id="pista4-17-19" class="disponible">Disponible <button type="button" onclick="reservar('pista4-17-19')">Reservar</button></td>
+            <td id="pista1-19-21" class="disponible">Disponible <button type="button" onclick="reservar('pista1-19-21')">Reservar</button></td>
+        
+            
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    function reservar(pistaHorario) {
+        var elemento = document.getElementById(pistaHorario);
+        var boton = elemento.querySelector("button");
+        if (elemento.classList.contains('disponible')) {
+            elemento.textContent = 'Reservado';
+            elemento.classList.remove('disponible');
+            elemento.classList.add('no-disponible');
+            boton.setAttribute('disabled', 'true');
+        }
+    }
+</script>
+
 </body>
 </html>
