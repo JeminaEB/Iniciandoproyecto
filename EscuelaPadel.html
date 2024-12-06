@@ -1,32 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PADEL&GYM </title>
-    <link rel="stylesheet" href="style.css">
+    <title>Escuela de Pádel</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .profesores {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .profesor {
+            text-align: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+        .profesor:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+        .profesor img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        .profesor h3 {
+            margin: 0;
+        }
+        .info {
+            margin-top: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
-<header>
-    <h1></h1>
-
-</header>
-
 <body>
     <header>
-        <h1>Escuela de Padel</h1>
-        <p><a href="index.html">👈 Volver atrás</a></p>
+        <h1>Escuela de Pádel</h1>
+        <p><a href="index.html"> Volver atrás</a></p>
+        <hr />
     </header>
-        <nav>
-            <ul>
-                <li><a href="HorariosClases.html">Horarios</a></li>
-                <li><a href="Profesores.html">Profesores</a></li>
-                <li><a href="Adultos.html">Adultos</a></li>
-                <li><a href="Infantil.html">Infantil</a></li>
-                
-            </ul>
-        </nav>
-        
-   
-    
+    <div class="container">
+        <h2>Profesores</h2>
+        <div class="profesores">
+            <div class="profesor" onclick="mostrarInfo('Juan Pérez')">
+                <img src="https://via.placeholder.com/100" alt="Juan Pérez">
+                <h3>Juan Pérez</h3>
+                <p>Especialista en iniciación</p>
+            </div>
+            <div class="profesor" onclick="mostrarInfo('María Gómez')">
+                <img src="https://via.placeholder.com/100" alt="María Gómez">
+                <h3>María Gómez</h3>
+                <p>Entrenadora avanzada</p>
+            </div>
+            <div class="profesor" onclick="mostrarInfo('Carlos López')">
+                <img src="https://via.placeholder.com/100" alt="Carlos López">
+                <h3>Carlos López</h3>
+                <p>Preparación física</p>
+            </div>
+            <div class="profesor" onclick="mostrarInfo('Pere Sanchez')">
+                <img src="https://via.placeholder.com/100" alt="Pere Sanchez">
+                <h3>Laura Fernández</h3>
+                <p>Estrategia en juego</p>
+            </div>
+        </div>
+        <div id="info" class="info"></div>
+    </div>
+    <script>
+        function mostrarInfo(nombre) {
+            const info = document.getElementById('info');
+            info.textContent = `Has seleccionado al profesor/a: ${nombre}`;
+        }
+    </script>
 </body>
 </html>
