@@ -53,49 +53,41 @@
         .profesor h3 {
             margin: 0;
         }
-        .info {
-            margin-top: 20px;
-            text-align: center;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
     <header>
         <h1>Escuela de Pádel</h1>
-        <p><a href="index.html"> Volver atrás</a></p>
-        <hr />
     </header>
     <div class="container">
         <h2>Profesores</h2>
         <div class="profesores">
-            <div class="profesor" onclick="mostrarInfo('Juan Pérez')">
+            <div class="profesor" onclick="seleccionarProfesor('Juan Pérez')">
                 <img src="https://via.placeholder.com/100" alt="Juan Pérez">
                 <h3>Juan Pérez</h3>
                 <p>Especialista en iniciación</p>
             </div>
-            <div class="profesor" onclick="mostrarInfo('María Gómez')">
+            <div class="profesor" onclick="seleccionarProfesor('María Gómez')">
                 <img src="https://via.placeholder.com/100" alt="María Gómez">
                 <h3>María Gómez</h3>
                 <p>Entrenadora avanzada</p>
             </div>
-            <div class="profesor" onclick="mostrarInfo('Carlos López')">
+            <div class="profesor" onclick="seleccionarProfesor('Carlos López')">
                 <img src="https://via.placeholder.com/100" alt="Carlos López">
                 <h3>Carlos López</h3>
                 <p>Preparación física</p>
             </div>
-            <div class="profesor" onclick="mostrarInfo('Pere Sanchez')">
+            <div class="profesor" onclick="seleccionarProfesor('Pere Sanchez')">
                 <img src="https://via.placeholder.com/100" alt="Pere Sanchez">
-                <h3>Laura Fernández</h3>
+                <h3>Pere Sanchez</h3>
                 <p>Estrategia en juego</p>
             </div>
         </div>
-        <div id="info" class="info"></div>
     </div>
     <script>
-        function mostrarInfo(nombre) {
-            const info = document.getElementById('info');
-            info.textContent = `Has seleccionado al profesor/a: ${nombre}`;
+        function seleccionarProfesor(nombre) {
+            // Guarda el nombre en la URL para usarlo en la página siguiente
+            window.location.href = `confirmacion.html?profesor=${encodeURIComponent(nombre)}`;
         }
     </script>
 </body>
