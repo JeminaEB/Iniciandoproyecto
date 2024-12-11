@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarifas de Clases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #0073e6;
+            color: white;
+            text-align: center;
+            padding: 1.5em 0;
+        }
+        table {
+            margin: 30px auto;
+            border-collapse: collapse;
+            width: 80%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #0073e6;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        caption {
+            margin: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #0073e6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tarifas de Clases</h1>
+        <h2>Consulta nuestras tarifas para diferentes tipos de clases</h2>
+        <p><a href="index.html"> Volver atrás</a></p>
+        <hr />
+        
+    </header>
+    <table>
+        <caption>Precios por Categoría</caption>
+        <thead>
+            <tr>
+                <th>Categoría</th>
+                <th>Duración</th>
+                <th>Precio por Clase</th>
+                <th>Paquete (4 Clases)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="highlight">Infantil</td>
+                <td>1 Hora</td>
+                <td>10 €</td>
+                <td>35 €</td>
+            </tr>
+            <tr>
+                <td class="highlight">Adultos</td>
+                <td>1 Hora</td>
+                <td>15 €</td>
+                <td>55 €</td>
+            </tr>
+            <tr>
+                <td class="highlight">Clases Dúo</td>
+                <td>1.5 Horas</td>
+                <td>20 € por persona</td>
+                <td>70 € por persona</td>
+            </tr>
+            <tr>
+                <td class="highlight">Clase Partido</td>
+                <td>2 Horas</td>
+                <td>25 €</td>
+                <td>90 €</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
