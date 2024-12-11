@@ -4,45 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reserva de Pistas</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 10px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        .disponible {
-            color: green;
-        }
-        .no-disponible {
-            color: red;
-        }
-        button {
-            padding: 8px 16px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            cursor: pointer;
-        }
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-    </style>
+   
+
 </head>
 <body>
     <header>
@@ -53,7 +16,7 @@
 
 <h1>Reserva de Pistas</h1>
 
-<table>
+<table border="1">
     <thead>
         <tr> 
             <th>Pista</th>
@@ -115,19 +78,9 @@
     </tbody>
 </table>
 
-<script>
-    function reservar(pistaHorario) {
-        var elemento = document.getElementById(pistaHorario);
-        var boton = elemento.querySelector("button");
-        if (elemento.classList.contains('disponible')) {
-            elemento.textContent = 'Reservado';
-            elemento.classList.remove('disponible');
-            elemento.classList.add('no-disponible');
-            boton.setAttribute('disabled', 'true');
-        }
-    }
-</script>
+
 
 </body>
+<p><button>Enviar</button></p>
 
 </html>
