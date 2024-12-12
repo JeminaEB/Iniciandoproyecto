@@ -10,6 +10,9 @@
 
 <div class="container">
     <h1>Formulario de Registro</h1>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
     <form action="" method="get">
        
      <p>
@@ -71,6 +74,45 @@
             <p>
                 <input type="submit" value="Registrar">
             </p>
+        </fieldset>    
+
+
+        <fieldset>
+            <legend>Especialidad Padel</legend>
+        <form action="" method="get">
+
+           
+            <p>
+             
+               <p> <label for="Sitio">Posición</label>
+                <select name="text" id="Sitio" required > 
+                    <option value="-">-</option>
+                    <option value="derecha">Derecha</option>
+                    <option value="revés">Revés</option>
+                    <option value="indiferente">Indiferente</option>
+                </select>
+                
+            </p>
+                
+                
+                <label for="number">Categoría</label>
+                <select name="number" id="number"  required>
+                    <option value="-">-</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+
+
+            </p>
+            <button>Confirmar</button>
+
+
+        </form>  
+    </fieldset> 
+          
            
      
     </form>

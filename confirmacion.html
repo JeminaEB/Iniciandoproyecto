@@ -62,7 +62,7 @@
         if (profesor) {
             mensaje.textContent = `Has seleccionado al profesor/a: ${profesor}. ¡Gracias por tu elección!`;
             // Configurar enlace para ir a la página de horarios
-            botonHorarios.href = `horarios.html?profesor=${encodeURIComponent(profesor)}`;
+            botonHorarios.href = `horarios_profesores.html?profesor=${encodeURIComponent(profesor)}`;
         } else {
             mensaje.textContent = "No se seleccionó ningún profesor.";
             botonHorarios.style.display = "none"; // Ocultar el botón si no hay profesor
