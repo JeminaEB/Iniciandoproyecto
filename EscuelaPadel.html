@@ -4,56 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Escuela de Pádel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #34495e;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        .profesores {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: space-around;
-        }
-        .profesor {
-            text-align: center;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            background-color: #f9f9f9;
-            transition: transform 0.2s, box-shadow 0.2s;
-            cursor: pointer;
-        }
-        .profesor:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-        }
-        .profesor img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin-bottom: 10px;
-        }
-        .profesor h3 {
-            margin: 0;
-        }
-    </style>
+    
 </head>
 <body>
     <header>
@@ -62,33 +13,46 @@
     <div class="container">
         <h2>Profesores</h2>
         <div class="profesores">
+
             <div class="profesor" onclick="seleccionarProfesor('Juan Pérez')">
-                <img src="https://via.placeholder.com/100" alt="Juan Pérez">
-                <h3>Juan Pérez</h3>
-                <p>Especialista en iniciación</p>
+               
+                <h3>Especialista en iniciación</h3>
+            
+                <input type="radio" name="Profe" value="Juan" id="Juan">
+                <label for="Juan"><strong>Juan</strong></label>
             </div>
-            <div class="profesor" onclick="seleccionarProfesor('María Gómez')">
-                <img src="https://via.placeholder.com/100" alt="María Gómez">
-                <h3>María Gómez</h3>
-                <p>Entrenadora avanzada</p>
+
+            <div class="profesor" onclick="seleccionarProfesor('Marta Gómez')">
+                
+                <h3>Entrenadora Avanzada</h3>
+                
+                <input type="radio" name="Profe" value="Marta" id="Marta">
+                <label for="Marta"><strong>Marta</strong></label>
+
             </div>
+
             <div class="profesor" onclick="seleccionarProfesor('Carlos López')">
-                <img src="https://via.placeholder.com/100" alt="Carlos López">
-                <h3>Carlos López</h3>
-                <p>Preparación física</p>
+                
+                <h3>Preparación Física</h3>
+               
+                <input type="radio" name="Profe" value="Carlos" id="Carlos">
+                <label for="Carlos"><strong>Carlos</strong></label>
             </div>
+
             <div class="profesor" onclick="seleccionarProfesor('Pere Sanchez')">
-                <img src="https://via.placeholder.com/100" alt="Pere Sanchez">
-                <h3>Pere Sanchez</h3>
-                <p>Estrategia en juego</p>
+                
+              
+                <h3>Estrategia en juego</h3>
+               
+                <input type="radio" name="Profe" value="Pere" id="Pere">
+                <label for="Pere"><strong>Pere</strong></label>
+               
+            
+                  </p>
             </div>
         </div>
     </div>
-    <script>
-        function seleccionarProfesor(nombre) {
-            // Guarda el nombre en la URL para usarlo en la página siguiente
-            window.location.href = `confirmacion.html?profesor=${encodeURIComponent(nombre)}`;
-        }
-    </script>
+    <p><button>Enviar</button></p>
+    
 </body>
 </html>
