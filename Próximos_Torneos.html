@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección</title>
+</head>
+<body>
+  <header> 
+    <h1>Selecciona un Torneo</h1>
+    <p><a href="novedades.html">volver atrás</a></p>
+  </header>   
+    <label for="tor">Torneos:</label>
+    <select id="tor" onchange="location = this.value;" required>
+        <option value="-">-</option>
+        <option value="Tinvierno.html">Invierno</option>
+        <option value="Tverano.html">Verano</option>
+        <option value="Totoño.html">Otoño</option>
+    </select>
+</body>
+<footer>
+  Copyright Padel Club 2024
+</footer>
+</html>
