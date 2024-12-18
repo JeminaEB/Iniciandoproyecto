@@ -21,73 +21,16 @@
   <meta  nombre= "msapplication-TileColor"  contenido= "#ffffff" > 
   <meta  nombre= "msapplication-TileImage"  contenido= "/ms-icon-144x144.png" > 
   <meta  nombre= "theme-color"  contenido= "#ffffff" >
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            width: 80%;
-            max-width: 800px;
-        }
-        h1 {
-            color: #34495e;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #34495e;
-            color: white;
-        }
-        td {
-            background-color: #f9f9f9;
-        }
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #34495e;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #2c3e50;
-        }
-    </style>
+    
 </head>
 <body>
+    <p><a href="index.html">👈 Volver atrás</a></p>
     <div class="container">
         <h1>Horarios Generales del Club de Pádel</h1>
         <h2>Disponibilidad de Pistas</h2>
-        <table >
+        <fieldset>
+
+        <table border="1" >
             <thead>
                 <tr>
                     <th>Día</th>
@@ -173,9 +116,13 @@
                 </tr>
             </tbody>
         </table>
+    </fieldset>
+
+    <br>
         <a href="index.html">Confirmar clase/s</a>
     </div>
 </body>
+<br>
 <footer>
     Copyright Padel Club 2024
  </footer>
