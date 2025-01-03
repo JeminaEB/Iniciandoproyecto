@@ -1,70 +1,46 @@
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 1000px;
+*{
+    font-size: 20px;
+    background-color: black;
+    color: white;  
 }
 
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+header>p a{
+    color: purple;
 }
 
-th, td {
-    padding: 12px;
+header img {
     text-align: center;
-    border: 1px solid #ddd;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+
 }
 
-th {
-    background-color: #007BFF;
-    color: white;
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 1.4em;
+    line-height: 1.2;
+
 }
 
-td {
-    background-color: #f9f9f9;
+li>a {
+  
+    color: purple;
+    font-size: 1.3em;
 }
+p a {
+    color: purple;
+    font-size: 1.3em;
+}
+li{
+    color: purple;
+}
+h3,h4,h5,h6{
+    color: purple;
 
-button {
-    padding: 8px 16px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background-color 0.3s;
 }
-
-button:hover {
-    background-color: #218838;
-}
-
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-}
-@media (max-width: 768px) {
-    table {
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-}
+ 

@@ -1,8 +1,52 @@
-@font-face {
-    font-family: ;
-    src: url(
-         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />),
+*{
+   
+    background-color: black;
+    color: white;  
+}
 
-    src:url(  <p><a href="Inicio.html"> <span class="material-symbols-outlined" title="Volver">
-    chevron_left</span> </a></p>)
+
+table {
+    
+    font-family: Arial;
+    background-color: purple;
+    font-size: 20px;
+    width: 100%;
+   
+ 
+       
+    
+}
+
+div.fondo{
+    background-color:purple;
+ 
+}
+
+
+th:hover{
+    background-color: blueviolet;
+    border-top-style: dotted;
+    
+  
+}
+
+table th:nth-child(){
+    background-color: purple;
+}
+
+td.disponible:hover{
+    background-color: green;
+}
+td.no-disponible:hover{
+    background-color: red;
+    opacity: 0.5;
+}
+
+footer button:only-child{
+    color: white;
+    background-color: black;
+    border: 5px solid purple;
+
+    font-size: 15px;
+
 }
