@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqui encontraras Accesosrios</title>
+    <title>Redirección</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+
     <link  rel= "apple-touch-icon"  tamaños= "57x57"  href= "/apple-icon-57x57.png" > 
     <link  rel= "apple-touch-icon"  tamaños= "60x60"  href= "/apple-icon-60x60.png" > 
      <link  rel= "apple-touch-icon"  tamaños= "72x72"  href= "/apple-icon-72x72.png" > 
@@ -24,23 +25,26 @@
   <meta  nombre= "msapplication-TileImage"  contenido= "/ms-icon-144x144.png" > 
   <meta  nombre= "theme-color"  contenido= "#ffffff" >
 </head>
-<body>
-    <header>
-        <p><a href="index.html"> <span class="material-symbols-outlined" title="Volver">
-            chevron_left</span> </a></p>
-      
-        <h1>Accesorios de Padel Nuestro</h1>
-    
-    </header>
 
-    <main>
-        <h2>Pagina Padel Nuestro</h2>
-        <iframe src="https://www.padeliberico.es/?gad_source=1&gclid=Cj0KCQiAsOq6BhDuARIsAGQ4-zhXFUqr-2JvawaZ7e3RWR4KlXFPxjGufeImm4NQ3RD5EVydkoYyy1UaAkL3EALw_wcB" frameborder="0" width="1024" height="768"></iframe>
-    </main>
-    
-</body><br>
+<body>
+ 
+  <header> 
+    <h1>Selecciona un Torneo</h1> 
+    <p><a href="Novedades.html"> <span class="material-symbols-outlined" title="Volver">
+      chevron_left</span> </a></p>
+ 
+  </header>   
+    <label for="tor">Torneos:</label>
+    <select id="tor" onchange="location = this.value;" required>
+        <option value="-">-</option>
+        <option value="Tinvierno.html">Invierno</option>
+        <option value="Tverano.html">Verano</option>
+        <option value="Totoño.html">Otoño</option>
+    </select>
+
+  </body><br>
 
 <footer>
-    Copyright Padel Club 2024
- </footer>
+  Copyright Padel Club 2024
+</footer>
 </html>

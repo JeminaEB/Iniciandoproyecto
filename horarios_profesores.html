@@ -4,73 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horarios Generales - Club de Pádel</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            width: 80%;
-            max-width: 800px;
-        }
-        h1 {
-            color: #34495e;
-        }
-        h2 {
-            color: #2c3e50;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: center;
-        }
-        th {
-            background-color: #34495e;
-            color: white;
-        }
-        td {
-            background-color: #f9f9f9;
-        }
-        input[type="checkbox"] {
-            width: 20px;
-            height: 20px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #34495e;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        a:hover {
-            background-color: #2c3e50;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=chevron_left" />
+    <link  rel= "apple-touch-icon"  tamaños= "57x57"  href= "/apple-icon-57x57.png" > 
+    <link  rel= "apple-touch-icon"  tamaños= "60x60"  href= "/apple-icon-60x60.png" > 
+     <link  rel= "apple-touch-icon"  tamaños= "72x72"  href= "/apple-icon-72x72.png" > 
+     <link  rel= "apple-touch-icon"  tamaños= "76x76"  href= "/apple-icon-76x76.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "114x114"  href= "/apple-icon-114x114.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "120x120"  href= "/apple-icon-120x120.png" > 
+  <link  rel= "apple-touch-icon"  tamaños = "144x144"  href = "/apple-icon-144x144.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "152x152"  href= "/apple-icon-152x152.png" > 
+  <link  rel= "apple-touch-icon"  tamaños= "180x180"  href= "/apple-icon-180x180.png" > 
+  <link  rel= "icon"  tipo= "image/png"  tamaños= "192x192"   href= "/android-icon-192x192.png" > 
+  <link  rel= "icon"  tipo= "image/png"  tamaños= "32x32"  href= "/favicon-32x32.png" > 
+  <link  rel= "icono"  tipo= "imagen/png"  tamaños= "96x96"  href= "/favicon-96x96.png" > 
+  <link  rel= "icono"  tipo= "imagen/png"  tamaños= "16x16"  href= "/favicon-16x16.png" > 
+  <link  rel= "manifiesto"  href= "/manifiesto.json" > 
+  <meta  nombre= "msapplication-TileColor"  contenido= "#ffffff" > 
+  <meta  nombre= "msapplication-TileImage"  contenido= "/ms-icon-144x144.png" > 
+  <meta  nombre= "theme-color"  contenido= "#ffffff" >
+    
 </head>
 <body>
+    <p><a href="index.html"> <span class="material-symbols-outlined" title="Volver">
+        chevron_left</span> </a></p>
     <div class="container">
         <h1>Horarios Generales del Club de Pádel</h1>
         <h2>Disponibilidad de Pistas</h2>
-        <table >
+        <fieldset>
+
+        <table border="1" >
             <thead>
                 <tr>
                     <th>Día</th>
@@ -156,7 +119,14 @@
                 </tr>
             </tbody>
         </table>
+    </fieldset>
+
+    <br>
         <a href="index.html">Confirmar clase/s</a>
     </div>
 </body>
+<br>
+<footer>
+    Copyright Padel Club 2024
+ </footer>
 </html>
