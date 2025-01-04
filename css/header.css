@@ -7,14 +7,14 @@
 
 
 header  {
-  
     text-align: center;
     
 }
 header img {
+    margin: 0;
    
-    width: 700px;
-    height: 500px; ;
+    width: 300px;
+    height: auto; ;
 }
 
 
@@ -55,4 +55,9 @@ h3,h4,h5,h6{
 
 .center img{
     text-align: center;
+}
+footer{
+   position: absolute;
+   width: 100%;
+   padding: 20px;
 }
