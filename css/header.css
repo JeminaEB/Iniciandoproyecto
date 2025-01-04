@@ -1,13 +1,25 @@
+
+
 *{
     font-size: 20px;
     background-color: black;
     color: white;  
-}
 
+    border: 0;
+    
+}
 
 
 header  {
     text-align: center;
+    border-bottom: 15px solid purple;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 5%;
+    border-top: 15px solid purple;
+    border-top-right-radius: 20%;
+    border-top-left-radius: 5%;
+    padding: 0; 
+    
     
 }
 header img {
@@ -53,3 +65,4 @@ h3,h4,h5,h6{
 .center img{
     text-align: center;
 }
+
