@@ -1,9 +1,9 @@
 
-
 *{
     font-size: 20px;
     background-color: black;
     color: white;  
+    position: normal;
 
     border: 0;
     
@@ -45,28 +45,25 @@ h2{
 
 }
 
- li {
+li{
     display: inline-block;
     border: 1px solid purple;
     padding: 5px 10px;
-
- }
+    
+}
 
 li>a {
   
     color: purple;
     font-size: 1.3em;
 }
-
-li+li{
-    margin-left: 20px;
-}
-
 p a {
     color: purple;
     font-size: 1.3em;
 }
-
+li{
+    color: purple;
+}
 h3,h4,h5,h6{
     color: purple;
 
@@ -76,3 +73,8 @@ h3,h4,h5,h6{
     text-align: center;
 }
 
+p>a.material-symbols-outlined{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
