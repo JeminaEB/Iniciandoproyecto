@@ -45,18 +45,28 @@ h2{
 
 }
 
+ li {
+    display: inline-block;
+    border: 1px solid purple;
+    padding: 5px 10px;
+
+ }
+
 li>a {
   
     color: purple;
     font-size: 1.3em;
 }
+
+li+li{
+    margin-left: 20px;
+}
+
 p a {
     color: purple;
     font-size: 1.3em;
 }
-li{
-    color: purple;
-}
+
 h3,h4,h5,h6{
     color: purple;
 
