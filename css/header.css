@@ -73,7 +73,7 @@ h3,h4,h5,h6{
     text-align: center;
 }
 
-p>a.material-symbols-outlined{
+p.container{
     position: absolute;
     top: 5px;
     left: 5px;
