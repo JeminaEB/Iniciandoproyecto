@@ -3,33 +3,54 @@
     font-size: 20px;
     background-color: black;
     color: white;  
-    position: normal;
+     
 
     border: 0;
     
 }
 
-
 header  {
-    text-align: center;
+    
+   
+     text-align: center;
     border-bottom: 15px solid purple;
-    border-bottom-left-radius: 20%;
+    border-bottom-left-radius: 10%;
     border-bottom-right-radius: 5%;
     border-top: 15px solid purple;
     border-top-right-radius: 20%;
     border-top-left-radius: 5%;
     padding: 0; 
-    
-    
+
+
 }
 header img {
     margin: 0;
-   
-    width: 300px;
+
+    width: 200px;
     height: auto; ;
 }
-
  
+
+
+header nav li a{
+    display: flex;
+    
+
+
+    
+    padding: 5px 10px;
+    display: block;
+   
+}
+ 
+header li a:hover{
+
+    gap: 15px;
+    color: black;
+    
+    background-color: purple;
+}  
+
 h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8em;
@@ -47,12 +68,13 @@ h2{
 
 li{
     display: inline-block;
-    border: 1px solid purple;
+    
     padding: 5px 10px;
     
 }
 
-li>a {
+li a {
+    text-decoration: none;
   
     color: purple;
     font-size: 1.3em;
@@ -79,7 +101,3 @@ p.container{
     left: 5px;
 }
 
-form.form{
-    border:5px solid white;
-    border-left: 2px;
-}
